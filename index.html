@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============ FIVICON ============ -->
+  <link rel="shortcut icon" href="./assets/svg/image-2.ico" type="image/x-icon">
+  <!-- ============ FONTS ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- ============ STYLES ============ -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>js30#2.3-movie-app</title>
+</head>
+<body>
+  <!-- ============ POPUP FOR IMAGE ============ -->
+  <div class="image-popup">
+    <button class="image-popup__close-btn"></button>
+    <a class="image-popup__download-btn" href="#">Download image</a>
+    <img class="image-popup__img" src="./assets/img/image-1.jpeg" alt="Image">
+    <div class="image-popup__img-info">
+      <a class="image-popup__author-link" href="#" title="author page">
+      <img class="image-popup__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+      </a>
+      <h6 class="image-popup__author-name" title="Author name">Nathan Numlao</h6>
+    </div> 
+    <button class="image-popup__pre-btn"></button>
+    <button class="image-popup__next-btn"></button>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__left">
+          <div class="header__logo"></div>
+          <h1 class="header__title title">
+            Unsplash <span>API</span>
+          </h1>
+        </div>
+        <form method="#" class="header__form form">
+          <input class="form__search" type="search" name="search" id="search" placeholder="Search photos" autocomplete="off" required>
+          <button class="form__btn-reset" type="reset"></button>
+          <button class="form__btn" type="submit"></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <section class="gallery">
+      <div class="gallery__not-found">
+        Sorry, we don't found anything
+      </div>
+      <div class="container">
+        <div class="gallery__inner">
+          <!-- Card-1 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-1.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-2 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-2.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-3 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-3.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-4 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-4.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-5 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-5.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-6 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-6.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-7 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-7.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-8 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-8.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-9 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-9.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-10 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-10.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-11 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-11.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+          <!-- Card-12 -->
+          <div class="gallery__card">
+            <img class="gallery__card-img" src="./assets/img/image-12.jpeg" alt="Image">
+            <div class="gallery__img-info">
+              <a class="gallery__author-link" href="##" title="author page">
+                <img class="gallery__author-img" src="./assets/avatars/athor-1.png" alt="Avatar">
+              </a>
+              <h6 class="gallery__author-name" title="Author name">Nathan Numlao</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__copyright">
+          &copy;
+          <span id="copyright">
+            2022
+          </span>
+          <a class="footer__my-github" href="https://github.com/greg-front-end">github
+          </a>
+        </div>
+        <div class="footer__rsschool-link">
+          <a class="footer__rss-link" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js" defer type="module"></script>
+</body>
+</html>
