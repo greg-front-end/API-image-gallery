@@ -1,0 +1,22 @@
+{
+  "name": "api-image-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greg-front-end/API-image-gallery.git"
+  },
+  "author": "Greg Martinos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greg-front-end/API-image-gallery/issues"
+  },
+  "homepage": "https://github.com/greg-front-end/API-image-gallery#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

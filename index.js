@@ -1,4 +1,5 @@
-import API_KEY_GOES_HERE from './API_KEY.js'
+import dotenv from '../node_modules/dotenv/'
+dotenv.config()
 window.addEventListener('DOMContentLoaded', () => {
 
   // After request from UNSPLASH API in the variable will be data of images
@@ -8,8 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
   let currentImage = 0;
 
   // API KEY and URL 
-  const API_KEY = API_KEY_GOES_HERE,
-        RANDOM_PHOTO_URL = `https://api.unsplash.com/photos/random?client_id=${API_KEY}&count=20`
+  const api_key = process.env.API_KEY,
+        RANDOM_PHOTO_URL = `https://api.unsplash.com/photos/random?client_id=${api_key}&count=20`
      
   const galleryInner = document.querySelector('.gallery__inner'),
         notFoundPopup = document.querySelector('.gallery__not-found'),
