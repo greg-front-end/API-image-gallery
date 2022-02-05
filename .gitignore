@@ -103,5 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
-# Here could be the api key
-API_KEY.js
+# Hide dist folder
+dist
+
+# Hide index.js file

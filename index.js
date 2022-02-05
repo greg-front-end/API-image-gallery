@@ -1,7 +1,5 @@
-import dotenv from '../node_modules/dotenv/'
-dotenv.config()
 window.addEventListener('DOMContentLoaded', () => {
-
+  
   // After request from UNSPLASH API in the variable will be data of images
   let dataImages = null;
 
@@ -87,11 +85,9 @@ window.addEventListener('DOMContentLoaded', () => {
       showImagePopup(dataImages[currentImage])
     }
   })
-
   // Fetch requset for get data
   const getResource = async (url) => {
     const res = await fetch(url);
-
     if (!res.ok) {
         throw new Error(`Could not fetch ${url}, status: ${res.status}`);
     } else {
@@ -154,7 +150,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Convert the data of values to object
     const inputValues = Object.fromEntries(formData.entries());
     // Make URL for search request on fetch
-    const SEARH_URL = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query=${inputValues.search}&per_page=20`
+    const SEARH_URL = `https://api.unsplash.com/search/photos?client_id=${api_key}&query=${inputValues.search}&per_page=20`
 
     // Get data of images when user set request in search input
     if (inputValues.search && prevSearchValue !== inputValues.search) {

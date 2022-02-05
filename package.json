@@ -18,5 +18,10 @@
   "homepage": "https://github.com/greg-front-end/API-image-gallery#readme",
   "dependencies": {
     "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^7.1.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   }
 }
